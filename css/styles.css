@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: #29fd53;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    background-color: #213555;
+  }
+  header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 25px 5%;
+    transition: all .50s ease;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .logo i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+  }
+  .logo span{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  .navbar{
+    display: flex;
+  }
+  .navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 20px;
+    transition: all .50s ease;
+  }
+  .navbar a:hover{
+    color: var(--main-color);
+  }
+  .main{
+    display: flex;
+    align-items: center;
+  }
+  .main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+  }
+  .user{
+    display: flex;
+    align-items: center;
+  }
+  .user i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 7px;
+  }
+  .main a:hover{
+    color: var(--main-color);
+  }
+  #menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+  }
+  .contactus{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+  }
+  .contactus .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+  .contactus .title h2{
+    color: #ffff;
+    font-weight: 500;
+  }
+  .form{
+    grid-area: form;
+  }
+  .info{
+    grid-area: info;
+  }
+  .map{
+    grid-area: map;
+  }
+  .contact{
+    background: #D8C4B6;
+    padding: 40px;
+    border-radius: 35px;
+    box-shadow: 0px 5px 35px rgba(0,0,0,0.15);
+  }
+  .contactbox{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info" 
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+  .contact h3{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  .formBox{
+    position: relative;
+    width: 100%;
+
+  }
+  .formBox .row50{
+    display: flex;
+    gap: 20px;
+  }
+  .inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  .formBox .row100 .inputBox{
+    width: 100%;
+  }
+  .inputBox span{
+    color: #29fd53;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  .inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #29fd53;
+  }
+  .inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #29fd53;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+  }
+  .inputBox input[type="text"]{
+    background: #ecd8ca;
+    color: #fff;
+  }
+  .inputBox input[type="submit"]{
+    background: #29fd53;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+  }
+  .inputBox ::placeholder{
+    color: #0e3959;
+  }
+
+  .info{
+    background: #0e3959;
+  }
+  .info h3{
+    color: #fff;
+  }
+  .info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #29fd53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .info .infoBox div p{
+    color: #fff;
+    font-size: 1.1em;
+  }
+  .info .infoBox div a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  .sci{
+    margin-top: 40px;
+    display: flex;
+
+  }
+  .sci li{
+    list-style: none;
+    margin-right: 15px;
+  }
+  .sci li a{
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+  }
+  .sci li a:hover{
+    color: #29fd53;
+  }
+  .map{
+    padding: 0;
+  }
+  .map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+  }
+
+
+
+  /* ================Brack point============== */
+  @media(max-width: 1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+  }
+  @media(max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 41vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50 ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all 0.50s ease;
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+        transform: translateY(5px);
+    }
+    .navbar.open{
+        right: 2%;
+    }
+
+  }
+  @media (max-width: 991px)
+  {
+    .contactus{
+      padding: 20px;
+    }
+    .contactbox{
+      grid-column: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "form"
+      "info"
+      "map";
+    }
+    
+    .formBox .row50{
+      display: flex;
+      gap: 0;
+      flex-direction: column;
+    }
+    .inputBox{
+      width: 100%;
+    }
+    .contact{
+      padding: 30px;
+    }
+    .map{
+      min-height: 300px;
+      padding: 0;
+    }
+  
+  }
